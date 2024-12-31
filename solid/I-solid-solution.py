@@ -1,5 +1,4 @@
 # Here your solution
-# Here your solution
 from abc import ABC, abstractmethod
 
 class PaymentInterface(ABC):
