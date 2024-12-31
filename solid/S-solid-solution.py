@@ -7,7 +7,7 @@ class BankAccount:
         self.balance = balance
 
 class DepositOperation:
-    def execute(self, account, amount:float):
+    def execute(self, account, amount):
         if amount <= 0:
             raise ValueError("Deposit amount must be positive.")
         
@@ -22,7 +22,7 @@ class DepositOperation:
         return amount
 
 class WithdrawOperation:
-    def execute(self, account, amount:float):
+    def execute(self, account, amount):
         if amount <= 0:
             raise ValueError("Withdrawal amount must be positive.")
         if amount > account.balance:
